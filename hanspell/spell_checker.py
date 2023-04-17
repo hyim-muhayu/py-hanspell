@@ -76,11 +76,11 @@ def check(text):
     # 띄어쓰기로 구분하기 위해 태그는 일단 보기 쉽게 바꿔둠.
     # ElementTree의 iter()를 써서 더 좋게 할 수 있는 방법이 있지만
     # 이 짧은 코드에 굳이 그렇게 할 필요성이 없으므로 일단 문자열을 치환하는 방법으로 작성.
-    html = html.replace('<span class=\'green_text\'>', '<green>') \
-               .replace('<span class=\'red_text\'>', '<red>') \
-               .replace('<span class=\'violet_text\'>', '<purple>') \
-               .replace('<span class=\'blue_text\'>', '<blue>') \
-               .replace('</span>', '<end>')
+    html = html.replace('<em class=\'green_text\'>', '<green>') \
+               .replace('<em class=\'red_text\'>', '<red>') \
+               .replace('<em class=\'violet_text\'>', '<purple>') \
+               .replace('<em class=\'blue_text\'>', '<blue>') \
+               .replace('</em>', '<end>')
     items = html.split(' ')
     words = []
     tmp = ''
